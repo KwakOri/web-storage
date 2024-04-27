@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "TTHakgyoansimMulgyeolB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMulgyeolB.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.guest-book {
+  z-index: 4;
+  width: 1300px;
+  height: 700px;
+  border: 3px solid black;
+  box-shadow: 20px 10px;
+  margin: 420px 20px 50px;
+  background-color: #c7c7c7;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.message {
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  font-family: "TTHakgyoansimMulgyeolB";
+}
+
+.post {
+  background-color: white;
+  border: 3px solid black;
+  width: 95%;
+  height: auto;
+  box-shadow: 10px 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#btnbtn {
+  height :600px;
+  overflow-y: auto;
+}
+
+.showbtn {
+  position: relative;
+
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f6df67;
+  border: 2px solid black;
+  box-shadow: 4px 4px;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.2s;
+  margin: 20px 20px;
+}
+
+.showbtn:hover,
+.submitbtn:hover {
+  background-color: #fceb98;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.user {
+  float: left;
+  margin-top: 3px;
+}
+
+.explain {
+  font-weight: normal;
+}
+
+.date {
+  text-align: right;
+  font-weight: normal;
+  margin-top: 3px;
+}
+
+.entry-form {
+  bottom: 1000px;
+  z-index: 3;
+  position: absolute;
+  display: block;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 3px solid black;
+  width: 1200px;
+  box-shadow: 10px 10px;
+  margin: 50px;
+  transition: all .5s;
+}
+
+.entry-form.visible {
+  bottom: 400px;
+}
+
+.entry-form .user {
+  padding: 10px 20px;
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: 2px 2px;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-bottom: 10px;
+}
+
+.entry-form .explain {
+  width: 90%;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: 2px 2px;
+  padding: 10px 20px;
+}
+
+.submitbtn {
+  position:relative;
+  top:0;
+  left:0;
+
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #f6df67;
+  border: 2px solid black;
+  box-shadow: 4px 4px;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.2s;
+  margin-bottom: 20px;
+}
+
+.delete-btn {
+  background-color: #f26767;
+  border: 2px solid black;
+  box-shadow: 2px 2px;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  float: right;
+  margin-top: -25px;
+}
+
+.delete-btn:hover {
+  transform: translateY(-3px);
+}
+
+.clicked {
+  left: 4px;
+  top:4px;
+  box-shadow: 0 0;
+}
+
+.usable {
+  z-index: 2;
+}
+
+.click-block {
+  pointer-events: none;
+}

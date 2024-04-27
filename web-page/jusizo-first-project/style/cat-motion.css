@@ -1,0 +1,82 @@
+.cat-hand {
+  position: relative;
+  top: -64px;
+  left: 0%;
+  width: 100px;
+  height: 200px;
+  transform: rotate(180deg);
+}
+
+.pose-grab {
+  background-image: url('../img/cat-parts/cat-grab.svg');
+  z-index: 1;
+}
+
+.pose-grab:hover {
+  cursor: pointer;
+}
+
+.pose-spread {
+  background-image: url('../img/cat-parts/cat-hand.svg'); 
+  z-index: -1;
+}
+
+.cursor-lock {
+  pointer-events: none;
+}
+
+.short-term {
+  transition-property: left;
+  transition-duration: 0.5s;
+}
+
+.middle-term {
+  transition-property: left;
+  transition-duration: 1s;
+}
+
+.long-term {
+  transition-property: left;
+  transition-duration: 1.5s;
+}
+
+/* 몸통 */
+
+.cat-body {
+  z-index: -2;
+  transition: 0.5s;
+  position: absolute;
+  transform: rotate(180deg) translateX(50%);
+  top: 0px;
+  left: 50%; 
+  width: 400px;
+  height: 600px;
+  background-image: url('../img/cat-parts/cat-angry.svg');
+
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  
+}
+
+@keyframes angrycat {
+  0% {
+    top: 320px;
+  }
+
+  50% {
+    top: 360px;
+  }
+  55% {
+  }
+  59% {
+    background-image: url('../img/cat-parts/cat-normal.svg'); 
+  }
+  60% {
+    top: 500px; 
+    background-image: url('../img/cat-parts/cat-normal.svg'); 
+  }
+  100% {
+    top: 0px;
+    background-image: url('../img/cat-parts/cat-normal.svg'); 
+  }
+}

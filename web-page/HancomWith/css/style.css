@@ -1,0 +1,437 @@
+
+
+/*---------- 헤더 영역 ----------*/
+
+header {
+    height: 120px;
+    width: 100%;
+    border: 1px solid #dddddd;
+    background: #fff;
+}
+header > div {
+    max-width: 1600px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+header .logo {
+    position: absolute;
+    color:transparent;
+    display: block;
+    width: 203px;
+    height:72px;
+    top: 22px;
+    left: 0;
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;
+}
+header ul { 
+    display: inline-block;
+    font-size: 0;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    display: block;
+    color: #313538;
+    padding: 0 33px;
+    font-size: 22px;
+    height: 120px;
+    line-height: 120px;
+    border-bottom: none;
+    transition: all 0.3s;
+}
+header ul li a:hover {
+    border-bottom: 4px solid #222222;
+    height: 116px;
+}
+header > div > div {
+    position: absolute;
+    font-size: 0px;
+    top: 32px;
+    right: 0;
+}
+header > div > div > * {
+    font-size: 14px;
+    vertical-align: middle;
+}
+header > div > div > div {
+    display: inline-block;
+}
+header > div > div > div * {
+    position: relative;
+    margin: 0 11px;
+    color: #939393;
+}
+header > div > div .top_search {
+    margin: 0 35px;
+}
+header > div > div .malang {
+    margin: 0 0 0 5px;
+}
+header > div > div > div *.on {
+    font-weight: bold;
+}
+
+header > div > div > div *.on {
+    border-bottom: 2px solid #222;
+    color: #222;
+}
+
+/*---------- 비주얼 영역 ----------*/
+
+.visual {
+    position: relative;
+    height: 1118px;
+    width: 100%;
+    text-align: center;
+    background: url(../images/secure_img.jpg) no-repeat; 
+    background-size: cover;
+    
+}
+.visual .btn_stop {
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.visual .text {
+    display: inline-block;
+    color: #fff;
+    margin: 318px 0 0 0;
+}
+.visual .text p {
+    font-size: 24px;
+    margin: 0 0 33px 0;
+}
+.visual .text h3 {
+    font-size: 76px;
+    margin: 0 0 50px;
+}
+.visual .text span {
+    display: block;
+    font-size: 20px;
+    margin: 6px 0 6px 0;
+} 
+.visual .text > * {
+    line-height: 1;
+}
+
+/*---------- 콘텐츠 영역 ----------*/
+
+.con {
+    text-align: center;
+    margin: 0 0 290px 0;
+}
+.con .text {
+    font-size: 36px;
+    margin: 200px 0 45px 0;
+    color: #222;
+}
+.con .sub_text {
+    font-size: 20px;
+    color: #888;
+    margin: 0 0 95px 0;
+}
+.con ul {
+    display: inline-block;
+}
+.con ul li {
+    float: left;
+    display: block;
+    margin: 0 51px;
+}
+.con ul li a {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+}
+.con ul li:nth-child(1) a:before {
+    background: url(../images/business_icon01.png) no-repeat center;
+}
+.con ul li:nth-child(2) a:before {
+    background: url(../images/business_icon02.png) no-repeat center;
+}
+.con ul li:nth-child(3) a:before {
+    background: url(../images/business_icon03.png) no-repeat center;
+}
+.con ul li:nth-child(4) a:before {
+    background: url(../images/business_icon04.png) no-repeat center;
+}
+.con ul li:nth-child(5) a:before {
+    background: url(../images/business_icon05.png) no-repeat center;
+}
+.con ul li:nth-child(6) a:before {
+    background: url(../images/business_icon06.png) no-repeat center;
+}
+.con ul li a:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 70px;
+    height: 60px;
+    transition: all 0.5s;
+}
+.con ul li:hover a:before {
+    position: relative;
+    top: 15px;
+    filter: opacity(50%);
+}
+.con ul li:hover a {
+    filter: opacity(50%);
+}
+
+/*---------- 아티클 영역 ----------*/
+article > div {
+    height: 670px;
+    font-size: 0;
+    position: relative;
+}
+
+article > div > div {
+    position: relative;
+    margin: 0 auto;
+    width: 1600px;
+    font-size: 0;
+}
+article > div > div > div {
+    position: absolute;
+    display: inline-block;
+    font-size: 0;
+    margin: 62px 0 0 0;
+}
+article > div > div > div p:first-child {
+    font-size: 20px;
+    color: #222d3b;
+}
+article > div > div > div strong {
+    display: inline-block;
+    font-size: 54px;
+    color: #222;
+    margin: 0 0 36px 0;
+}
+article > div > div > div p {
+    font-size: 18px;
+    color: #888897;
+    margin: 4px 0;
+}
+article > div > div > div a {
+    display: inline-block;
+    margin: 60px 0 0 0;
+}
+article > div > a {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+article > div:nth-child(2n) div > div {
+    right: 0;
+}
+article > div:nth-child(2n) a {
+    left: 0;
+}
+article > div:nth-child(1) a {
+    background: url(../images/blockchain_img.jpg) no-repeat center;
+}
+article > div:nth-child(2) a {
+    background: url(../images/authentication_img.jpg) no-repeat center;
+}
+article > div:nth-child(3) a {
+    background: url(../images/secure_img.jpg) no-repeat center;
+}
+article > div:nth-child(4) a {
+    background: url(../images/forensics_img.jpg) no-repeat center;
+}
+article > div:nth-child(5) a {
+    background: url(../images/vr_img.jpg) no-repeat center;
+}
+article > div:nth-child(6) a {
+    background: url(../images/academy_img.jpg) no-repeat center;
+}
+
+/*---------- 고객지원 영역 ----------*/
+.service {
+    margin: 188px 0 0 0;
+    text-align: center;
+}
+.service div {
+    display: inline-block;
+    width: 1600px;
+}
+.service > div > a {
+    display: inline-block;
+    width: 760px;
+    height: 690px;
+    overflow: hidden;
+    margin: 0 18px;
+}
+.service > div > a.first {
+    background: url(../images/case_img.jpg) no-repeat top;
+    background-size: cover;
+    text-align: center;
+}
+.service > div > a.second {
+    background: url(../images/contact_img.jpg) no-repeat top;
+    background-size: cover;
+    text-align: center;
+}
+.service div a:hover div {
+    background: rgb(45, 71, 201, 0.5);
+    padding: 192px 0 0 0;
+}
+.service div > a > div {
+    width: 100%;
+    padding: 262px 0 0 0;
+    height: 100%;
+    transition: all 0.5s;
+    background: rgb(45, 71, 201, 0);
+}
+.service div > a > div > * {
+    display: block;
+    margin: 0 auto;
+    line-height: 1;
+    color: #fff;
+}
+.service div > a > div > .icon {
+    padding: 0 0 45px 0;
+}
+.service div > a > div > strong {
+    font-size: 30px;
+    padding: 0 0 18px 0;
+}
+.service div > a > div > p {
+    font-size: 20px;
+    padding: 9px 0;
+}
+.service div > a > div > .arrow {
+    padding: 36px 0 0 0;
+}
+
+/*----------- 링크 ----------*/
+footer {
+    height: 420px;
+    background: #f0f0f0;
+    margin: 189px 0 0 0;
+    padding: 89px 0 0 0;
+}
+.link {
+    margin: 0 auto;
+    width: 1550px;
+}
+
+.link > div {
+    float: left;
+}
+.link > div ul {
+    display: block;
+    float: left;
+}
+.link > div h3 {
+    font-size: 23px;
+    color: #222;
+    margin: 0 0 15px;
+}
+.link > div ul li {
+    padding: 10px 0;
+}
+.link > div ul li a {
+    display: block;
+    font-size: 17px;
+    color: #666;
+    line-height: 1;
+}
+.link > div {
+    width: 19%;
+}
+.link > div:first-child {
+}
+.link > div > ul:nth-child(1) {
+    margin: 0 50px 0 0;
+}
+.link > div > ul:nth-child(1) {
+    width: 54%;
+}
+.link .hidden {
+    color: transparent;
+}
+
+/*---------- 정보 영역 ----------*/
+.info {
+    text-align: center;
+}
+.info > div {
+    text-align: center;
+    display: inline-block;
+    width: 1600px;
+    height: 260px;
+    margin: 64px 0 0 0;
+}
+.info > div > div {
+    display: inline-block;
+}
+.info > div .left {
+    float: left;
+}
+.info > div .left img {
+    display: block;
+    margin: 0 0 24px 0;
+}
+.info > div .left a {
+    text-decoration: underline;
+    font-size: 14px;
+}
+.info > div .mid span,
+.info > div .mid p {
+    display: inline-block;
+    color: #888;
+    font-size: 15px;
+    padding: 7px 10px;
+}
+.info > div .mid p span {
+    color: #cdcdcd;
+}
+.info > div > .right {
+    float: right;
+}
+.info > div > .right > a {
+    position: relative;
+    float: right;
+    display:block; 
+    color: #777777;
+    font-weight: bold;
+    width: 260px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #e5e5e5;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 0 40px 0 0;
+    box-sizing: border-box;
+    margin: 0 0 20px 0;
+}
+.info > div > .right > a:after {
+    position:absolute;
+    top: 25px;
+    left: 225px;
+    content: "";
+    width: 11px;
+    height: 16px;
+    background: url(../images/select_icon.png) no-repeat;
+}
+.info > div > .right > div a {
+    display: inline-block;
+    margin: 0 3px;
+    text-align: center;
+}  
+.info > div > .right > div a img {
+    display: block;
+    height: 52px;
+}

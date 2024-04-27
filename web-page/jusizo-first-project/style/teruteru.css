@@ -1,0 +1,95 @@
+.teruteru {
+  position: relative;
+  z-index: 0;
+  top: -100px;
+  width: 62px;
+  height: 100px;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.teruteru .teru-head {
+  position: absolute;
+  z-index: 0;
+  top:-2px;
+  left: 3px;
+  width: 52px;
+  height: 52px;
+  background-image: url('../img/teruteru/head.svg');
+}
+
+.teruteru .teru-ribbon {
+  position: absolute;
+  top: 38px;
+  left: 9px;
+  width: 42px;
+  height: 22px;
+  z-index: 1;
+}
+
+.teruteru .teru-body {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 62px;
+  height: 66px;
+  background-image: url('../img/teruteru/body.svg');
+}
+
+.teruteru .teru-face {
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  width: 36px;
+  height: 28px;
+}
+
+.teruteru .face01 {
+  background-image: url('../img/teruteru/face01.svg');
+}
+
+.teruteru .face02 {
+  background-image: url('../img/teruteru/face02.svg');
+}
+
+.teruteru .face03 {
+  background-image: url('../img/teruteru/face03.svg');
+}
+
+.teruteru .teru-ribbon.red {
+  background-image: url('../img/teruteru/ribbon-red.svg');
+}
+
+.teruteru .teru-ribbon.blue {
+  background-image: url('../img/teruteru/ribbon-blue.svg');
+}
+
+.teruteru .teru-ribbon.white {
+  background-image: url('../img/teruteru/ribbon-white.svg');
+}
+
+.teruteru .teru-ribbon.grey {
+  background-image: url('../img/teruteru/ribbon-grey.svg');
+}
+
+.teruteru:hover .teru-face {
+  background-image: url('../img/teruteru/face03.svg');
+}
+
+.teru-line {
+  position: absolute;
+  z-index: -2;
+  top: -340px;
+  left: 46%;
+  width: 4px;
+  height: 400px;
+  background-color: rgb(66, 48, 27);
+  border: 3px solid black;
+}
+
+.whitespace {
+  width: 400px;
+  height: 100%;
+}

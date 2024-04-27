@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "esamanru-bold";
+  src: url("./fonts/esamanru\ OTF\ Bold.otf");
+}
+
+@font-face {
+  font-family: "esamanru-light";
+  src: url("./fonts/esamanru\ OTF\ Light.otf");
+}
+
+@font-face {
+  font-family: "esamanru-medium";
+  src: url("./fonts/esamanru\ OTF\ Medium.otf");
+}
+
+ul {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "esamanru-bold";
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "esamanru-bold";
+}
+
+li {
+  list-style: none;
+  height: 50px;
+}
+
+a {
+  font-family: "esamanru-medium";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #292929;
+  width: 300px;
+  height: 100%;
+  margin: 16px 0;
+}
+
+body > div {
+  margin :40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

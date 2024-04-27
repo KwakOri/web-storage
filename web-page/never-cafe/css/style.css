@@ -1,0 +1,480 @@
+/* Fonts Section */
+/* Fonts Section */
+/* Fonts Section */
+
+@font-face {
+  font-family: 'S-CoreDream-1Thin';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-2ExtraLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-5Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-6Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-7ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-8Heavy';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-9Black';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Function Section */
+/* Function Section */
+/* Function Section */
+
+body {
+  background-color: #eeeeee;
+}
+
+.hidden {
+  height: 0;
+}
+
+p {
+  color: #404040;
+}
+
+article {
+  margin-bottom: 10px;
+}
+
+/* Header Section */
+/* Header Section */
+/* Header Section */
+
+/* Nav Section */
+/* Nav Section */
+/* Nav Section */
+
+nav {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo > p {
+  font-family: 'S-CoreDream-6Bold';
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+nav #logo {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-image: url('../icons/logo_icon.png');
+  background-size: cover;
+}
+
+nav .option {
+  display: flex;
+  align-items: center;
+}
+
+nav .option a {
+  margin-left: 16px;
+}
+
+nav .option i {
+  color: #2d2d2d;
+  font-size: 18px;
+}
+
+/* Category Section */
+/* Category Section */
+/* Category Section */
+
+.category {
+  height: 45px;
+  background-color: #ffffff;
+}
+
+.category ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10px;
+}
+
+.category ul li {
+
+  font-family: 'S-CoreDream-5Medium';
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.category ul li.on {
+  font-family: 'S-CoreDream-7ExtraBold';
+}
+
+.category ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  line-height: 45px;
+  font-size: 14px;
+  color: #2d2d2d;
+  text-decoration: none; 
+}
+
+.category .underscore {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: #2d2d2d;
+}
+
+/* Ad Section */
+/* Ad Section */
+/* Ad Section */
+
+.ad {
+  overflow: hidden ;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 85px;
+
+
+  background-color: #f5f7f9;
+  transition: .5s all;
+  border-bottom: 1px solid #e9eced;
+  border-top: 1px solid #e9eced;
+
+  margin-bottom: 0;
+}
+
+.ad > a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.ad img {
+  width: 100px;
+  height: 65px;
+  border-radius: 10px;
+}
+
+.ad .description {
+  display: flex;
+  flex-flow: column;
+  margin-left: 12px;
+}
+
+.ad .description p:first-child {
+  font-family: 'S-CoreDream-6Bold';
+  color: #212121; 
+  margin-bottom: 4px;
+  font-size: .9rem;
+}
+
+.ad .description p:nth-child(2) {
+  color: #656565;
+  font-size: .8rem;
+}
+
+.ad .btns {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.ad .btns a:first-child {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 8px;
+
+  opacity: 1;
+  transition: .3s all;
+  background-color: #fcfcfd;
+  padding: 3px 5px;
+  border-radius: 3px;
+  border: 1px solid #dddede;
+}
+
+.ad .btns span {
+  color: #acacab;
+}
+
+.ad .btns #next {
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.ad.off {
+  height: 0;
+}
+
+/* My Cafe Section */
+/* My Cafe Section */
+/* My Cafe Section */
+
+.my-cafe {
+  background-color: #ffffff;
+  padding: 0 16px;
+}
+
+/* My Cafe Section - nav */
+
+.my-cafe nav {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.my-cafe nav p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'S-CoreDream-7ExtraBold';
+  font-size: 16px;
+}
+
+.my-cafe nav a {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 12px;
+}
+
+.my-cafe nav .view-new-posts {
+  display: flex;
+  align-items: center;
+
+}
+
+.my-cafe nav .toggle-box {
+  position: relative;
+  display: flex;
+  width: 32px;
+  height: 20px;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  margin-left: 6px;
+  background-color: #ffffff;
+  transition: .5s all;
+}
+
+.my-cafe nav .toggle-slide {
+  position: relative;
+  left: -1px;
+  transition: .5s all;
+
+  height: 18px;
+  width: 18px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  background-color: #ffffff;
+  filter: drop-shadow(2px 0px 2px #eaeaea);
+}
+
+.my-cafe nav .toggle-box.on {
+  background-color: #04c75a;
+}
+
+.my-cafe nav .toggle-slide.on {
+  left: 12px;
+}
+
+/* My Cafe Section - cafe-list */
+
+.my-cafe .cafe-list {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr) ;
+}
+
+.my-cafe .cafe-list li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-cafe .cafe-list li a p.new::after {
+  content: 'N';
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 7px;
+  width: 14px;
+  height: 14px;
+  color: white;
+  background-color: #f53536;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 14px;
+
+}
+
+.my-cafe .cafe-list a {
+  margin: 10px 0;
+  width: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.my-cafe .cafe-list img {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  border: 1px solid #dddede;
+}
+
+.my-cafe .cafe-list p {
+  padding: 10px 0;
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  margin-top:1px;
+  overflow:hidden;
+  vertical-align:top;
+  text-overflow: ellipsis;
+  word-break:break-all;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2
+}
+
+.my-cafe .slide-control {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+
+.my-cafe .slide-control a{
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 0 3px 0 3px;
+  border-radius: 3px;
+  background-color: #e6e6e6;
+  color: transparent;
+}
+
+.my-cafe .slide-control a.on {
+  background-color: #323232; 
+}
+
+/* Neighberhood Section */
+/* Neighberhood Section */
+/* Neighberhood Section */
+
+.neighborhood {
+  padding: 12px 16px;
+  background-color: #ffffff;
+}
+
+.neighborhood nav {
+  padding: 8px 0;
+  margin: 0;
+}
+
+.neighborhood nav p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'S-CoreDream-7ExtraBold';
+  font-size: 16px;
+}
+
+.neighborhood nav a {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 12px;
+}
+
+.neighborhood .post-lists a {
+  font-size: 15px;
+  padding: 20px;
+}
+
+.neighborhood .post-lists a span {
+  margin-right: 4px;
+}
+
+.neighborhood .post-lists a span.neighbor {
+  color:#04c75a;
+}
+
+.neighborhood .post-lists a span.cafe {
+  color:#04c75a;
+}
+
+.neighborhood .post-lists a span.sell {
+  color:#0076fc;
+}
+
+.neighborhood .post-lists a p:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;  
+  white-space: nowrap;
+}
+
+.neighborhood .post-lists a p:nth-child(2) {
+  font-size: 12px;
+  margin-top: 8px;
+  color: #999999;
+}

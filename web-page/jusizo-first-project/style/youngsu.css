@@ -1,0 +1,125 @@
+/* 여기 입력해주세요 */
+
+#tab2 .tag-front {
+  background-color: #FFA34F;
+}
+
+#tab2 .tag-back {
+  background-color: #FFB774;
+} 
+
+
+.youngsu-background-color {
+    background-color: #fbbd99;
+  }
+  
+  article {
+    position: relative;
+  }
+  
+  .card {
+    width: 310px;
+    height: 470px;
+    border: 3px solid black;
+    box-shadow: 20px 10px;
+    margin: 20px;
+    background-color: white;
+  }
+  
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+  }
+  
+  .wrap2 {
+    margin: 30px;
+    margin-left: 40px;
+    width: 800px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .youngsuprofile {
+    margin: 20px;
+  }
+  
+  .youngsuprofile p{
+    font-size: 20px;
+  }
+  
+  .youngsu-profile-image {
+    width: 310px;
+    height: 240px;
+  }
+  
+  .wrap-2 {
+    display: flex;
+    flex-direction: row;
+    width: 790px;
+    height: 250px;
+    margin-bottom: 25px;
+  }
+  
+  .wrap-2 .youngsumbti {
+    width: 310px;
+    height: 250px;
+    background-color: whitesmoke;
+    box-shadow: 20px 10px;
+    margin-right: 40px;
+  }
+  
+  .youngsumbti .mbtilayout {
+    width: 310px;
+    height: 20px;
+    background-color: rgb(051, 051, 051);
+    padding-bottom: 5px;
+  }
+  
+  .youngsumbti .mbtilayout-2 {
+    margin: 20px;
+  }
+  
+  .youngsumbti span {
+    font-size: 100px;
+    font-weight: bolder;
+    margin: 40px;
+  }
+  
+  .mbtilayout img {
+    margin-top: 4px;
+    margin-left: 8px;
+    width: 11px;
+    height: 11px;
+  }
+  
+  .wrap-2 .youngsuproscons {
+    background-color: whitesmoke;
+    width: 470px;
+    height: 245px;
+    box-shadow: 20px 10px;
+    padding: 15px 20px 0px 20px;
+  }
+  
+  .youngsupros,
+  .youngsucons {
+    margin: 10px;
+  }
+  
+  .youngsupros p,
+  .youngsucons p {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .youngsustyle {
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: whitesmoke;
+    width: 755px;
+    height: 179px;
+    box-shadow: 20px 10px;
+    padding: 15px 20px;
+    font-size: 20px;
+  }

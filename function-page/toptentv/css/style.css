@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CBNUJIKJI';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/CBNUJIKJI.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HBIOS-SYS';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/HBIOS-SYS.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #3b9ae1;
+  font-family: 'CBNUJIKJI';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card input {
+  font-family: 'CBNUJIKJI';
+  width: 350px;
+  height: 150px;
+  border: none;
+  border-radius: 40px;
+  background-color: #3b9ae1;
+  color: white;
+  font-size: 40px;
+  margin:20px 0;
+}
+
+.btns {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btns input {
+  color: #3b9ae1;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 40px;
+  font-weight: bold;
+  width: 200px;
+  height: 80px;
+  padding: 5px;
+  margin: 10px;
+}
+
+#reset-btn {
+  width: 80px;
+  height: 60px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+#rest-cards {
+  position: relative;
+  bottom: -10px;
+  font-family: 'CBNUJIKJI';
+  color: white;
+  font-size: 50px;;
+}
+
+#rest-cards:after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  content: "rest";
+  font-size: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 25px;
+  border-radius: 50px;
+  width: 428px;
+  height: 600px;
+  margin: 20px;
+  background-color: white;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card h1 {
+  font-size: 60px;
+}
+
+.quiz {
+  padding: 50px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.opt-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.opt {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  width: 400px;
+  height: 50px;
+  border-radius: 25px;
+  line-height: 50px;
+  margin: 5px 0;
+  background-color: white;
+}
+
+.opt:first-child {
+  /* color: #5bb318;
+  border: 2px solid #5bb318; */
+  background-color: #5bb318;
+}
+
+.opt:last-child {
+  /* color: #820000;
+  border: 2px solid #820000; */
+  background-color: #820000;
+}
+
+#title {
+  color: white;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  font-size: 60px;
+  margin: 30px 0 15px;
+}
+
+.hidden {
+  display: none;
+}

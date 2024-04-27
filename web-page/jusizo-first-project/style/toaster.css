@@ -1,0 +1,104 @@
+
+
+.toast-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: 70px;
+  z-index: -1;
+}
+
+.toaster {
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+  background-image: url('../img/toaster.svg');
+  z-index: 1;
+}
+
+.toaster-switch {
+  z-index: 1;
+  position: absolute;
+  top: 48px;
+  left: 38px;
+  background-image: url('../img/toaster-switch.svg');
+  width: 64px;
+  height: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+}
+
+.toaster-switch.working {
+  top: 88px;
+}
+
+.toast {
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top:0;
+  width: 180px;
+  height: 180px;
+  z-index: 0;
+  background-image: url('../img/toast.svg');
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+
+.toast-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.toast-title p {
+  color: #23201e;
+  font-family: 'PyeongChangPeace-Bold';
+}
+
+.toast-description {
+  font-family: 'PyeongChangPeace-Bold';
+  color: #23201e;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+@keyframes toastJump {
+  0% {
+    top: 0;
+  }
+
+  30% {
+    top: 0;
+  }
+
+  35% {
+    top: -150px;
+  }
+
+  40% {
+    top: -130px;
+  }
+  90% {
+    top: -130px; 
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.toast.jump {
+  top: -150px;
+}

@@ -1,0 +1,174 @@
+/* 여기 입력해주세요 */
+
+#tab5 .tag-front {
+  background-color: #EF7E7E;
+}
+
+#tab5 .tag-back {
+  background-color: #FFA2A2;
+} 
+
+.wrap {
+    width: 1320px;
+    height: 600px;
+}
+.chaesu-card {
+    background-color: #6A88BE;
+}
+
+.nav li:nth-child(5) a{
+    background-color: #6A88BE;
+}
+
+.card {
+    width: 310px;
+    height: 470px;
+    border: 3px solid black;
+    box-shadow: 20px 10px;
+    margin: 20px 30px 50px;
+    background-color: white;
+}
+
+.card .image{
+    width: 304px;
+    height: 240px;
+}
+
+.info-wrap {
+    display: flex;
+    flex-direction: row;
+}
+.info {
+    width: 800px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-title h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.profile-title p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.info-1{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 250px;
+    margin: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.info-1 .chaesu-mbti {
+    flex: 1;
+    width: 200px;
+    height: 200px;
+    background-color: #C9D9F0;
+    box-shadow: 10px 10px;
+    margin:30px;
+}
+.chaesu-mbti .chaesucustom-layout {
+    width: 200px;
+    height: 20px;
+    background-color: rgb(051, 051, 051);
+}
+
+.chaesu-mbti .chaesucustom-layout .button {
+    margin-top: 4px;
+    width: 11px;
+    height: 12px;
+    margin-left: 3px;
+}
+
+.chaesu-mbti .chaesulayout-mbti {
+    margin: 30px 50px;
+}
+.chaesu-mbti p {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.info-1 .chaesuproscons{
+    background-color: white;
+    width: 470px;
+    height: 245px;
+    box-shadow: 10px 10px;
+    margin: 70px 90px 30px 0px;
+} 
+
+.chaesuproscons h4{
+    text-align: center;
+    font-size: 20px;
+
+}
+.chaesuproscons p{
+    font-size: 15px;
+    text-align: center;
+}
+.chaesustyle {
+    background-color: white;
+    width: 700px;
+    height: 179px;
+    box-shadow: 10px 10px;
+    padding: 40px;
+    margin: 50px;
+}
+
+.chaesustyle p{
+    font-weight: bolder;
+}
+
+.chaesustyle span{
+    font-size: 50;
+}
+
+.chaesuticket{
+    position: absolute;
+    z-index: -1;
+    top: 45%;
+    left:900px;
+}
+.chaesuticket .chaesuticketimg{
+    width: 400px;
+    height: 400px;
+}
+.chaesuticket:hover {
+    transform: translateY(180px);
+    transition: 0.5s;
+    bottom: 0;
+}
+
+.chaesuticket .chaesuticket-text{
+    position: absolute;
+    top: 65%;
+    left: 46%;
+    font-size: 13px;
+    font-weight: bolder;
+    transform: translate( -50%, -50% );
+}
+
+
+.chaesurole{
+    position: absolute;
+    z-index: 1;
+    top: 85%;
+    left: 30px;
+}
+
+.role-img{
+    width: 300px;
+    height: 400px;
+}
+
+.chaesurole p{
+    position: absolute;
+    top: 34%;
+    left: 35%;
+    font-size: 25px;
+}

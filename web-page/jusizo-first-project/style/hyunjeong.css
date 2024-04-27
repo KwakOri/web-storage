@@ -1,0 +1,236 @@
+/* 여기 입력해주세요 */
+
+#tab3 .tag-front {
+  background-color: #79A4F8;
+}
+
+#tab3 .tag-back {
+  background-color: #A3C2FF;
+} 
+
+
+.tab-color {
+  background-color: #ffc800;
+}
+
+.hyunjeong-background-color {
+  background-color: #ffc400;
+}
+
+#tab3 {
+  position: relative;
+}
+
+#tab3 .card {
+  width: 310px;
+  height: 485px;
+  border: 3px solid black;
+  box-shadow: 20px 20px;
+  margin: 25px;
+  background-color: white;
+}
+
+#tab3 .info {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+#tab3 .profile-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+  margin-top: auto;
+}
+
+.profile-image img {
+  object-fit: cover;
+}
+
+.frofile-txt {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.name {
+  font-size: 30px;
+  text-align: start;
+  margin: 10px;
+}
+
+.date {
+  font-size: 20px;
+  text-align: start;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.up {
+  width: 800px;
+  height: 280px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.hyunjeong-mbti {
+  width: 300px;
+  height: 230px;
+  margin: 23px;
+  float: left;
+  box-shadow: 15px 15px;
+  background-color: #87bfff;
+  font-size: 110px;
+  border: 3px solid black;
+  font-display: center;
+  position: relative;
+  text-align: center;
+}
+
+.hyunjeong-mbti-box {
+  width: 300px;
+  height: 40px;
+  position: relative;
+  background-color: #2d2d2d;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.circle {
+  margin: 20px;
+}
+
+.circler {
+  background-color: #f74544;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 10%;
+}
+
+.circley {
+  background-color: #ffc400;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  flex-direction: row;
+  top: 50%;
+  left: 20%;
+}
+
+.circleg {
+  background-color: #24c239;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  flex-direction: row;
+  top: 50%;
+  left: 30%;
+}
+
+.hyunjeong-proscons {
+  background-color: #ffffff;
+  width: 350px;
+  height: 200px;
+  box-shadow: 15px 15px;
+  padding: 20px 20px 0px 20px;
+  margin: 23px;
+  margin-top: 30px;
+  border: 3px solid black;
+}
+.pros,
+.cons {
+  margin: 20px;
+}
+.pros p,
+.cons p {
+  margin: 5px;
+  font-size: 20px;
+}
+.hyunjeong-style {
+  background-color: #ffffff;
+  width: 700px;
+  height: 150px;
+  box-shadow: 15px 15px;
+  padding: 15px 20px;
+  margin-left: 65px;
+  margin-top: 30px;
+  border: 3px solid black;
+}
+
+.pla {
+  margin: 20px;
+}
+
+.hyunjeong-style p {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.compo {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  z-index: -2;
+  transform: translate(140%, 0);
+  top: -250px;
+  left: 25px;
+}
+
+.component {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hov {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  z-index: -2;
+}
+
+.hov:hover {
+  transform: translateY(270px);
+  transition: 0.5s;
+}
+
+.compo2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 100px;
+  bottom: -400px;
+}
+
+.com2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.component2 {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.part {
+  font-size: 40px;
+  top: -160px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}

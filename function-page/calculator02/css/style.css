@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'DS-Digit';
+  src: url('../fonts/DS-DIGIT.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Batang';
+  src: url('../fonts/SokchoBadaBatang.otf') format('truetype');
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.btn-area {
+  font-family: 'Batang';
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.calculator {
+  max-width: 375px;
+  height: 420px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  background-color: #181818;
+  border-radius: 8px;
+}
+
+.display-area {
+  width: 100%;
+  box-sizing: border-box;
+  height: 110px;
+  padding: 10px;
+  background-color: #4d5055;
+}
+
+.display {
+  position: relative;
+  font-family: 'DS-Digit';
+  font-size: 40px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #181818;
+  color: white;
+  padding: 5px;
+}
+
+
+.display p {
+  color: white;
+  width: 313px;
+  height: 100%;
+  font-size: 36px;
+  overflow-wrap: break-word;
+}
+
+.display .alert {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  background-image: url("../img/alert.png");
+  background-color: #181818;
+  background-size: cover;
+}
+
+.btn-area {
+  margin-top: 20px;
+}
+
+.btn-area ul {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(5,1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.btn-area ul li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.btn-area p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.btn-area svg + p {
+  display: none;
+}
+
+li.black {
+  background-color: #2e3134;
+  color: white;
+}
+
+li.grey {
+  background-color: #4d5055;
+  color: white;
+}
+
+li.blue {
+  background-color: #79a4f9;
+  color: black;
+}
+
+li.red {
+  background-color: #e85e56;
+  color: white;
+}

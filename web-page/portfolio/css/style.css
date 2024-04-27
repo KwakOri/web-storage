@@ -1,0 +1,366 @@
+@font-face {
+	font-family: "SBAggroB";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Vitro_core";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "EliceDigitalBaeum_Bold";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.black {
+	color: black;
+}
+
+.white {
+	color: white;
+}
+
+header {
+	position: relative;
+	text-align: center;
+}
+
+header::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-image: url("/images/header-back.jpg");
+	background-size: cover;
+	filter: brightness(50%);
+	opacity: 0.8;
+	z-index: -1;
+}
+
+.nav-back {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 1;
+	transition-duration: 0.2s;
+	background-color: transparent;
+	color: white;
+}
+
+.nav-scroll {
+	color: black;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1000px;
+	height: 70px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+nav h1 {
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 80%;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+nav ul li a {
+	color: white;
+	display: block;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	height: 100%;
+	padding: 0 15px;
+	opacity: 80%;
+}
+nav h1:hover,
+nav ul li:hover a {
+	opacity: 1;
+}
+
+header {
+	padding-top: 150px;
+}
+
+header h2 {
+	color: white;
+	font-family: "SBAggroB";
+	font-size: 50px;
+	line-height: 1.5;
+}
+
+header p {
+	color: white;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+header .underscore {
+	margin: 25px auto;
+	width: 50px;
+	border: 2px solid #f4613a;
+}
+
+header button {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	width: 160px;
+	height: 55px;
+	background-color: #f4613a;
+	border: none;
+	border-radius: 30px;
+	padding-right: 15px;
+	margin: 30px 0 65px 0;
+	cursor: pointer;
+}
+
+header button::after {
+	content: "↓";
+	font-weight: bold;
+	color: white;
+	position: relative;
+	top: -2px;
+	left: 10px;
+}
+
+header button:hover,
+header button:hover::after {
+	background-color: aliceblue;
+	color: #f4613a;
+}
+
+.profile {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.profile > div {
+	width: 100%;
+	height: 70px;
+	text-align: center;
+}
+
+.small-title {
+	padding: 70px 0 50px;
+}
+
+.small-title h2 {
+	display: inline;
+	width: 100%;
+	position: relative;
+	color: black;
+	font-family: "SBAggroB";
+	font-size: 50px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid black;
+}
+
+.small-title h2::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 20px;
+	left: -40px;
+	width: 32px;
+	height: 32px;
+	background-image: url("/images/black-link.png");
+	background-size: cover;
+	opacity: 60%;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.profile .item {
+	width: 200px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.profile .item div {
+	margin-left: 15px;
+}
+
+.profile .item h6 {
+	font-family: "EliceDigitalBaeum_Bold";
+	color: #333333;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.profile .item p {
+	font-family: "EliceDigitalBaeum_Bold";
+	color: #333333;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.skills {
+	width: 100%;
+	background-color: #f9c51e;
+}
+
+.skills > div:first-child {
+	height: 70px;
+	text-align: center;
+}
+
+.skills .container {
+	display: flex;
+	flex-flow: column wrap;
+	align-content: space-between;
+	width: 1000px;
+	height: 1100px;
+	margin: 0 auto;
+}
+
+.skills .container .item {
+	position: relative;
+	top: 0;
+	padding: 35px 25px;
+	width: 220px;
+	background-color: white;
+	border-radius: 15px;
+	margin-bottom: 30px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	transition: all 0.35s;
+}
+
+.skills .container .item:hover {
+	position: relative;
+	top: -10px;
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skills .container .item h5 {
+	font-family: "SBAggroB";
+	font-size: 18px;
+	color: #f45b33;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	border-bottom: 2px solid #d1d1d1;
+}
+
+.skills .container .item img {
+	width: 220px;
+}
+
+.profile {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.archiving {
+	width: 100%;
+	background-color: #222222;
+}
+
+.archiving .small-title h2 {
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+.archiving .small-title h2::before {
+	filter: brightness(0) invert(1);
+	opacity: 1;
+}
+
+.archiving > div {
+	width: 100%;
+	text-align: center;
+}
+
+.archiving .container {
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 20px 0 70px;
+}
+
+.archiving .container .item {
+	position: relative;
+	top: 0;
+	transition: all 0.35s;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 410px;
+	height: 320px;
+	background-color: white;
+	padding: 30px 35px;
+	border-radius: 20px;
+}
+
+.archiving .container .item:hover {
+	position: relative;
+	top: -10px;
+}
+
+.archiving .container .item img {
+	height: 40px;
+	margin-bottom: 25px;
+}
+
+.archiving .container .item a {
+	color: #0074d4;
+	font-size: 16px;
+	text-decoration: none;
+	margin-bottom: 25px;
+}
+
+.archiving .container .item p {
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+
+.archiving .container .item ul {
+	text-align: left;
+	margin-left: 20px;
+}
+
+.archiving .container .item ul li {
+	list-style-type: disc;
+	line-height: 1.8;
+}

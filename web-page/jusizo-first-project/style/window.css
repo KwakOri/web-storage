@@ -1,0 +1,45 @@
+
+.window-area {
+  position: relative;
+  width: 1320px;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.window-box {
+  cursor: pointer;
+  position: absolute; 
+  width: 400px;
+  height:300px;
+}
+
+.window-front-frame {
+  z-index: 1;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  background-image: url('../img/window-frame.svg');
+}
+
+.window-frame {
+  z-index: 0;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  background-image: url('../img/gif/snow20.gif');
+}
+
+.window-blind {
+  position: absolute;
+  top: 14px;
+  width: 400px;
+  height: 54px;
+  background-image: url('../img/window-blind.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  z-index: 1;
+  transition: all 0.25s;
+}

@@ -1,0 +1,290 @@
+a {
+	text-decoration: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+header {
+	width: 100%;
+}
+
+header .contents {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+header .contents .menu {
+	display: flex;
+	margin-top: 30px;
+	align-self: flex-end;
+}
+
+header .contents .menu li a {
+	color: #929292;
+	font-size: 14px;
+	margin-left: 25px;
+}
+
+header .contents img.logo {
+	height: 45px;
+	margin-bottom: 40px;
+}
+
+header .contents input {
+	position: relative;
+	width: 420px;
+	height: 46px;
+	background-color: #fdeee4;
+	border: none;
+	border-radius: 32px;
+	margin-bottom: 25px;
+	padding: 0 30px;
+}
+
+header .contents input:focus {
+	outline: none;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	z-index: 1;
+}
+
+nav .contents {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 1280px;
+	height: 60px;
+}
+
+nav .contents .menu-btn {
+	position: absolute;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 18px;
+	height: 18px;
+}
+
+nav .contents .menu-btn .menu-button {
+	width: 100%;
+	height: 1px;
+	background-color: black;
+}
+
+nav .contents .nav-bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+nav .contents .nav-bar li {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+nav .contents .nav-bar li a {
+	display: block;
+	height: 100%;
+	line-height: 60px;
+	margin: 0 15px;
+	color: black;
+}
+
+/* 슬라이드 영역 */
+
+.sect1 {
+	position: relative;
+	width: 100%;
+	height: 710px;
+	text-align: center;
+}
+
+.sect1 .slider {
+	position: relative;
+	width: 1280px;
+	height: 100%;
+	overflow: hidden;
+	margin: 50px auto 40px;
+}
+
+.sect1 .slider .container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5240px;
+	height: 100%;
+}
+
+.sect1 .slider .container.animated {
+	transition: all 0.3s ease-in-out;
+}
+
+.sect1 .slider .container .item {
+	float: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 620px;
+}
+
+.sect1 .slider .container .item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.sect1 .slider .container .item img {
+	width: 100%;
+	height: 620px;
+	object-fit: cover;
+	margin-bottom: 30px;
+	border-radius: 20px;
+}
+
+.sect1 .slider .container .item h3 {
+	color: black;
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.sect1 .slider .container .item p {
+	color: black;
+	font-size: 18px;
+}
+
+.sect1 .prev,
+.sect1 .next {
+	cursor: auto;
+	display: block;
+	opacity: 1;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	position: absolute;
+	font-size: 50px;
+	top: 40%;
+	transform: translateY(-50%);
+	transition: all 0.5s ease-in-out;
+}
+
+.sect1 .prev {
+	left: 25px;
+}
+
+.sect1 .next {
+	right: 25px;
+}
+
+.btn-bar {
+	display: inline-block;
+	font-size: 0;
+}
+
+.btn-bar .btn {
+	font-size: 0;
+	color: transparent;
+	width: 6px;
+	height: 6px;
+	padding: 0;
+	margin: 0 4px;
+	border: none;
+	border-radius: 3px;
+	background-color: #bfbfbf;
+	transition: all 0.35s ease-in-out;
+}
+
+.btn-bar .btn.on {
+	width: 30px;
+	background-color: coral;
+}
+
+.stopMouse {
+	pointer-events: none;
+	cursor: pointer;
+}
+
+/* 다른 영역 */
+
+.sect2 {
+	width: 100%;
+	margin-bottom: 140px;
+}
+
+.sect2 ul {
+	margin: 120px auto 0;
+	width: 100%;
+	max-width: 1280px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.sect2 ul li a {
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sect2 ul li:hover a div {
+	position: relative;
+	top: -10px;
+}
+
+.sect2 ul li a div {
+	position: relative;
+	top: 0;
+	width: 100px;
+	height: 100px;
+	border-radius: 32px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+}
+
+.sect2 ul li a p {
+	font-size: 15px;
+	margin-top: 24px;
+}
+
+.sect2 ul li a h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+.sect3 li {
+	list-style-type: none;
+}
+
+.sect3 li a {
+	float: left;
+	color: black;
+	text-align: center;
+}
+
+.sect3 ul li:not(:last-child) a {
+	margin-right: 50px;
+}
+
+.sect3 li a img {
+	width: 300px;
+	height: 300px;
+}

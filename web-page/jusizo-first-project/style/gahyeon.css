@@ -1,0 +1,145 @@
+/* 여기 입력해주세요 */
+
+
+#tab7 .tag-front {
+  background-color: #A27FB2;
+}
+
+#tab7 .tag-back {
+  background-color: #D6BFE0;
+} 
+
+
+/* 탭박스 중앙으로? */
+#tab7 {
+  position: relative;
+}
+
+.nav-link.gahyeon {
+  color: white;
+  background-color: #ad88be;
+}
+.background-color.gahyeon {
+  background-color: #ad88be;
+}
+
+.card.gahyeon {
+  width: 288px;
+  height: 480px;
+  border: 4px solid black;
+  box-shadow: 20px 10px #1f1f1f;
+  margin: 30px;
+  color: #000000;
+  background-color: white;
+  overflow: hidden;
+}
+
+.info-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+#tab7 .info {
+  margin: 20px;
+  width: 800px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-1 {
+  display: flex;
+  flex-direction: row;
+  width: 790px;
+  height: 250px;
+  margin-bottom: 25px;
+}
+
+.image.gahyeon {
+  width: 288px;
+  height: 288px;
+  object-fit: cover;
+}
+
+.profile.gahyeon {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mbti.gahyeon {
+  position: relative;
+  left: 910px;
+  top: -520px;
+  width: 320px;
+  height: 240px;
+  border: 4px solid black;
+  box-shadow: 20px 10px #1f1f1f;
+  margin: 20px;
+  color: #000000;
+  background-color: white;
+}
+
+.proscons.gahyeon {
+  position: relative;
+  left: -10px;
+  top: -530px;
+  color: #000000;
+  background-color: white;
+  width: 470px;
+  height: 220px;
+  box-shadow: 20px 10px #1f1f1f;
+  padding: 10px;
+}
+
+.proscons.gahyeon3 {
+  margin-top: 0px;
+}
+
+.style.gahyeon {
+  background-color: white;
+  width: 500px;
+  box-shadow: 20px 10px #1f1f1f;
+  padding: 40px;
+  margin: 70px;
+}
+
+.style.gahyeon3 {
+  margin-top: 30px;
+}
+
+.ticket.gahyeon {
+  position: absolute;
+  z-index: -1;
+  top: 180px;
+  right: 100px;
+  transition: all .5s;
+}
+
+.ticket.gahyeon:hover {
+  top: 460px; 
+}
+
+
+.ticket-img {
+  box-sizing: border-box;
+  padding-top: 160px;
+  padding-left: 40px;
+  width: 620px;
+  height: 520px;
+  background-image: url("../img/gahyeon-ticket.svg");
+  background-size: cover;
+  filter: drop-shadow(10px 10px black);
+}
+.ticket-img > * {
+  font-size: x-large;
+  color: #000000;
+}
+
+.part-img {
+  position: absolute;
+  left: -100px;
+  bottom: -300px;
+}

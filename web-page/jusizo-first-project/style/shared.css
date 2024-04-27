@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@font-face {
+  font-family: 'PyeongChangPeace-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CWDangamAsac-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  border: 4px solid #2d2d2d;
+  box-shadow: 10px 10px #2d2d2d;
+  margin: 40px 0 40px 0;
+}
+
+header {
+  position: relative;
+  width: 1320px;
+  z-index: 1;
+}
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.nav-tabs-box {
+  position: relative;
+  top: 10px;
+  z-index: 1;
+}
+
+.nav-tabs-box ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  overflow: hidden;
+  position: relative; 
+}
+
+.nav-tabs-box li {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-tabs-box .nav-link {
+  position: relative;
+  top: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 32px;
+  height: 100%;
+  width: 100%;
+  border: 4px solid #2d2d2d;
+  color: white;
+  border-radius: 0 30px 0 0;
+  transition: all 0.5s;
+}
+
+/* 뱃지 공통 css */
+
+.badge {
+  box-sizing: border-box;
+  position: absolute;
+  top: 700px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(10px 10px black);
+  backface-visibility: hidden;
+  transition: all 0.5s;
+}
+
+.badge.front {
+  transform: rotateY(0deg);
+}
+
+.badge.back {
+  transform: rotateY(180deg);
+}
+
+.badge-box:hover .badge.front {
+  transform: rotateY(180deg);
+}
+
+.badge-box:hover .badge.back {
+  transform: rotateY(360deg);
+}
+
+.badge-pin {
+  position: absolute;
+  top: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: white;
+  border: 4px solid black;
+}
+
+.badge-tag {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 200px;
+  border-radius: 80px;
+  border: 4px solid black;
+}
+
+.badge-description {
+  font-family: 'PyeongChangPeace-Bold';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.badge-description span {
+  font-family: 'PyeongChangPeace-Bold'; 
+}
+
+.tag-back .badge-description {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 28px;
+  font-weight: 700;
+  /* 패딩추가예시 */
+  padding: 0 20px;
+}
+
+.badge-description span {
+  font-size: 48px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+/* 포스트잇 코드 */
+
+.paper {
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  z-index: -1;
+  box-sizing: border-box;
+  font-size: 24px;
+  padding-left: 40px;
+  padding-top: 160px;
+  width: 620px;
+  height: 620px;
+  transition: all 0.5s;
+  filter: drop-shadow(10px 10px black);
+}
+
+.paper p.site-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 30px 0 0 0;
+}
+
+.paper p img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.paper a {
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.paper:hover {
+  top: 460px;
+}
+
+#tab2 .paper {
+  background-image: url("../img/post-it/youngsu.svg");
+}
+#tab3 .paper {
+  background-image: url("../img/post-it/hyeonjung.svg");
+}
+#tab4 .paper {
+  background-image: url("../img/post-it/hyojin.svg");
+}
+#tab5 .paper {
+  background-image: url("../img/post-it/chaesu.svg");
+}
+#tab6 .paper {
+  background-image: url("../img/post-it/jaehun.svg");
+}
+#tab7 .paper {
+  background-image: url("../img/post-it/gahyeon.svg");
+}
+
+/* 임시 코드 */
+/* 임시 코드 */
+
+.nav-tabs-box .nav-link.active {
+  border-bottom: none;
+  top: 0px;
+}
+
+.ad-area {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  transition: all 1s;
+  opacity: 100%;
+}
+
+.ad {
+  width: 100%;
+  height: 360px;
+  background-image: url('../img/ad.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+  background-color: #ffee8b;
+}
+
+.ad-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 60px;
+  border-radius: 16px;
+  font-size: 30px;
+  font-weight: 900;
+  color: black;
+  border: 4px solid black;
+  filter: drop-shadow(6px 6px black);
+  background-color: white;
+}
+
+.footer-bg {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFDC61;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #FFDC61;
+  max-width: 1320px;
+  width: 100%;
+  height: 300px;
+}
+
+footer p {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 64px;
+
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+footer a .footer-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+
+.footer-logo {
+  object-fit: cover;
+  width: 235px;
+  height: 235px;
+  position: absolute;
+  left: 30px;
+}

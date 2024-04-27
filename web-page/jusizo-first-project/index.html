@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUSIZO</title>
+    <link rel="stylesheet" href="./style/shared.css" />
+    <link rel="stylesheet" href="./style/cat-motion.css" />
+    <link rel="stylesheet" href="./style/toaster.css">
+    <link rel="stylesheet" href="./style/window.css">
+    <link rel="stylesheet" href="./style/teruteru.css">
+  </head>
+
+  <body>
+    <div class="ad-area">
+      <div class="ad">
+        <a href="#a" class="ad-close">닫기</a>
+      </div>
+    </div>
+    <div class="logo-box">
+      <img src="./img/logo.png" alt="" />
+    </div>
+    <header>
+      <div class="nav-tabs-box">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a
+              class="nav-link item0 active main-background-color"
+              aria-current="page"
+              href="#a"
+              onclick="openTab('tab1')"
+              >팀 소개</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link item1 youngsu-background-color"
+              href="#a"
+              onclick="openTab('tab2')"
+              >영수</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link item2 hyunjeong-background-color"
+              href="#a"
+              onclick="openTab('tab3')"
+              >현정</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link item3 hyojin-background-color"
+              href="#a"
+              onclick="openTab('tab4')"
+              >효진</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link item4" href="#a" onclick="openTab('tab5')"
+              >채수</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link item5" href="#a" onclick="openTab('tab6')"
+              >재훈</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link item6 gahyeon"
+              href="#a"
+              onclick="openTab('tab7')"
+              >가현</a
+            >
+          </li>
+        </ul>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+      <article
+        id="tab1"
+        class="custom-box team-main main-background-color"
+        style="display: grid"
+      >
+        <link rel="stylesheet" href="./style/main_page.css" />
+        <div class="main-content-wrap">
+          <div class="main-logo-box">
+            <img class="main-logo" src="./img/main_page_logo.svg" alt="" />
+          </div>
+          <div class="main-intro-wrap">
+            <div class="intro-box">
+              <h3 class="team-intro">팀소개</h3>
+              <p class="sub-intro">아이디어를 실현한다 ! 팀 주시조 입니다 !</p>
+              <hr />
+            </div>
+            <div class="intro-box">
+              <p class="char-sub">
+                <span>팀 특징</span><br />
+                우리 팀은 탁월한 커뮤니케이션과 협업 능력으로 함께 일하며,
+                창의적인 디자인으로 고객들에게 혁신적인 경험을 제공합니다.
+                유연성과 적응력을 갖춰 빠르게 변화하는 환경에 대처하고, 개인과
+                팀의 성장을 추구합니다.
+                <br />
+                <br /><span>팀 목표</span><br />
+                저희 팀은 효율적인 협업과 소통을 바탕으로 사용자 중심의 경험을
+                제공하는 것이 목표입니다. 또한, 개발자들은 자신의 역량을
+                지속적으로 향상시키며, 팀 내부에서 지식과 경험을 공유하여 함께
+                성장하는 문화를 유지하고자 합니다.
+              </p>
+              <hr />
+            </div>
+            <div class="intro-footer">
+              <div class="banner">
+                <img src="./img/team_image.png" alt="" />
+              </div>
+              <div class="promise">
+                <h3 class="prom-title">우리 팀만의 약속</h3>
+                <p class="prom-sub">
+                  1. 모르는게 있다면 수줍어 하지 않고, 서로 물어보기!<br />
+                  2. 지각하지 말기!(다른 일정이 있다면 꼭 말해주기)<br />
+                  3. 맡은 임무에 열심히 임하기!<br />
+                  4. 상대방의 의견을 잘 경청하고, 말 이쁘게 말하기!<br />
+                  5. 협업 도중에 연락, 메일 잘 받기!<br />
+                  6. 좋은 정보가 있다면 공유하며 함께 성장하기!<br />
+                  7. 몸에 이상이 있다면, 숨기지 말고 팀원들한테 말하기!<br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cat-hand pose-grab"></div>
+        <div class="cat-body"></div>
+        <div class="cat-wake-up-count"></div>
+        <div class="toast-area">
+          <div class="toaster"></div>
+          <div class="toaster-switch"></div>
+          <div class="toast">
+            <div class="toast-title">
+              <p>고양이가</p>
+              <p>깬 횟수</p>
+              <p class="toast-description">10회</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article
+        id="tab2"
+        class="custom-box youngsu-background-color"
+        style="display: none"
+      >
+        <link rel="stylesheet" href="./style/youngsu.css" />
+        <div class="wrap">
+          <div class="card">
+            <div>
+              <img
+                src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2016%2F10%2F09%2F15%2F21%2Fbusiness-man-1725976_1280.png&type=a340"
+                class="youngsu-profile-image"
+                alt="프로필사진"
+              />
+            </div>
+            <div class="youngsuprofile">
+              <h2>박영수</h2>
+              <p>2000년 05월 30일</p>
+            </div>
+          </div>
+          <div class="wrap2">
+            <div class="wrap-2">
+              <div class="youngsumbti">
+                <div class="mbtilayout">
+                  <img src="./img/youngsu_1.png" alt="" />
+                  <img src="./img/youngsu_2.png" alt="" />
+                  <img src="./img/youngsu_3.png" alt="" />
+                </div>
+                <div class="mbtilayout-2">
+                  <span>ISTJ</span>
+                </div>
+              </div>
+              <div class="youngsuproscons">
+                <div class="youngsupros">
+                  <p>장점</p>
+                  <span style="font-weight: 700"
+                    >상대방의 말을 잘 들어주고 시간 및 약속을 잘 지키며, 입이
+                    무거워서 다른 사람들에게 지인들의 비밀 이야기를 절대로 하지
+                    않습니다.</span
+                  >
+                </div>
+                <div class="youngsucons">
+                  <p>단점</p>
+                  <span style="font-weight: 700"
+                    >낯가림이 심하고 말이 많지 않으며, 어떤 정보를 익히는 것에
+                    있어 머리로 이해하는 것보다 직접 부딪혀야 이해가 더
+                    빠릅니다.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="youngsustyle">
+              <p>협업 스타일</p>
+              <span style="font-weight: 700">
+                팀원 간에 싸움이 발생하지 않도록 항상 주의하고 상대방에게 최대한
+                말을 이쁘게 하려고 합니다. 그리고 작업하는데 문제가 발생하면
+                혼자 해결하는 것도 좋지만, 그게 힘들 경우 팀원들의 도움을
+                적극적으로 받으려고 합니다.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="badge-box">
+          <div class="badge front">
+            <div class="badge-pin"></div>
+            <div class="badge-tag tag-front">
+              <div class="badge-description">
+                코드의 무한동력 <span>담당</span>
+              </div>
+            </div>
+          </div>
+          <div class="badge back">
+            <div class="badge-pin"></div>
+            <div class="badge-tag tag-back">
+              <div class="badge-description">
+                지치지 않는 노력과 열정으로<br />
+                팀을 지속적으로 지원한 개발자
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="paper">
+          <p class="site-name"><img src="./img/github.svg" alt="" />깃허브</p>
+          <a href="https://github.com/youngsupark1"
+            >https://github.com/youngsupark1</a
+          >
+          <p class="site-name"><img src="./img/velog.svg" alt="" />벨로그</p>
+          <a href="https://velog.io/@youngsu21/posts"
+            >https://velog.io/@youngsu21/posts</a
+          >
+        </div>
+      </article>
+
+      <article
+        id="tab3"
+        class="custom-box hyunjeong-background-color"
+        style="display: none"
+      >
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style/hyunjeong.css" />
+        <div class="info">
+          <div class="card">
+            <div class="profile-image">
+              <img
+                id="hyunjeong-profile-image"
+                src="./img/mexico.jpg"
+                alt="프로필사진"
+              />
+            </div>
+            <div class="frofile-txt">
+              <h1 class="name">곽현정</h1>
+              <p class="date">2000년 5월 13일</p>
+            </div>
+          </div>
+          <div class="down">
+            <div class="up">
+              <div class="hyunjeong-mbti">
+                <div class="hyunjeong-mbti-box">
+                  <div class="circle">
+                    <div class="circler"></div>
+                    <div class="circley"></div>
+                    <div class="circleg"></div>
+                  </div>
+                </div>
+                <div class="hyunjeong-mbti-txt">
+                  <span>ISTP</span>
+                </div>
+              </div>
+
+              <div class="hyunjeong-proscons">
+                <div class="pros">
+                  <p>장점</p>
+                  <span style="font-weight: 700; margin-left: 7px"
+                    >상대를 속단하지 않고 이해하려 노력합니다.</span
+                  >
+                </div>
+                <div class="cons">
+                  <p>단점</p>
+                  <span style="font-weight: 700; margin-left: 7px"
+                    >무뚝뚝하고 낯을 가립니다.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hyunjeong-style">
+              <div class="pla">
+                <p>협업스타일</p>
+                <span style="font-weight: 700; line-height: 180%"
+                  >막히는 부분이 생기면 적극적으로 찾아보고 질문합니다.</span
+                >
+                <br /><span style="font-weight: 700; line-height: 180%"
+                  >맡은 일을 열심히 합니다.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="badge-box">
+          <div class="badge front">
+            <div class="badge-pin pin-front"></div>
+            <div class="badge-tag tag-front">
+              <div class="badge-description">
+                안정성의 수호신 <span>담당</span>
+              </div>
+            </div>
+          </div>
+          <div class="badge back">
+            <div class="badge-pin pin-back"></div>
+            <div class="badge-tag tag-back">
+              <div class="badge-description">
+                프로젝트의 안정성을 지키며<br />
+                팀을 보호하는 개발자
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="paper">
+          <p class="site-name"><img src="./img/github.svg" alt="" />깃허브</p>
+          <a href="https://github.com/hyunjeongkwak"
+            >https://github.com/hyunjeongkwak</a
+          >
+          <p class="site-name"><img src="./img/velog.svg" alt="" />벨로그</p>
+          <a href="https://velog.io/@hyunjeong/posts"
+            >https://velog.io/@hyunjeong/posts</a
+          >
+        </div>
+      </article>
+
+      <article
+        id="tab4"
+        class="custom-box hyojin-background-color"
+        style="display: none"
+      >
+        <link rel="stylesheet" href="./style/hyojin.css" />
+        <div class="info-wrap">
+          <div class="card">
+            <div class="image-box">
+              <img
+                src="./img/hyojin_profile.JPG"
+                class="profile-image"
+                alt="프로필사진"
+              />
+            </div>
+            <div class="profile-title">
+              <h2>김효진</h2>
+              <p>1999년 2월 25일</p>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-1">
+              <div class="mbti hyojin-mbti-color">
+                <div class="layout-mbti">
+                  <img src="./img/hyojin_dot1.svg" alt="dot image 1" />
+                  <img src="./img/hyojin_dot2.svg" alt="dot image 2" />
+                  <img src="./img/hyojin_dot3.svg" alt="dot image 3" />
+                </div>
+                <div class="layout-mbti-2">
+                  <span>ISTP</span>
+                </div>
+              </div>
+              <div class="hyojinproscons">
+                <div class="pros">
+                  <p>장점</p>
+                  <span style="font-weight: 700"
+                    >새로운 환경에 적응을 금방 합니다.</span
+                  ><br />
+                </div>
+                <div class="cons">
+                  <p>단점</p>
+                  <span style="font-weight: 700"
+                    >낯을 많이 가려 필요한 경우가 아니면 먼저 말을 잘
+                    안겁니다.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="style">
+              <p>협업 스타일</p>
+              <span style="font-weight: 700">
+                충돌 없이 의사소통을 하려고 노력하고 다른 사람들에게 많이 배우려
+                합니다.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="badge-box">
+          <div class="badge front">
+            <div class="badge-pin"></div>
+            <div class="badge-tag tag-front">
+              <div class="badge-description">
+                비트의 탐험가<span>담당</span>
+              </div>
+            </div>
+          </div>
+          <div class="badge back">
+            <div class="badge-pin"></div>
+            <div class="badge-tag tag-back">
+              <div class="badge-description">
+                새로운 기술과 도전을 두려워하지 않고<br />
+                탐험하는 개발자
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="paper">
+          <p class="site-name"><img src="./img/github.svg" alt="" />깃허브</p>
+          <a href="https://github.com/hyowls">https://github.com/hyowls</a>
+          <p class="site-name"><img src="./img/velog.svg" alt="" />벨로그</p>
+          <a href="https://velog.io/@hyowmls/posts"
+            >https://velog.io/@hyowmls/posts</a
+          >
+        </div>
+      </article>
+
+      <article id="tab5" class="custom-box chaesu-card" style="display: none">
+        <link rel="stylesheet" href="./style/chaesu.css" />
+        <div class="info-wrap">
+          <div class="card">
+            <div class="image-box">
+              <img class="image" src="./img/chaesu_profile.svg" alt="" />
+            </div>
+            <div class="profile-title">
+              <h2>박채수</h2>
+              <p>2000년 3월 15일</p>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-1">
+              <div class="chaesu-mbti">
+                <div class="chaesucustom-layout">
+                  <svg
+                    class="button"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="12" cy="12" r="12" fill="#F74544" />
+                  </svg>
+                  <svg
+                    class="button"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="12" cy="12" r="12" fill="#FAAD15" />
+                  </svg>
+                  <svg
+                    class="button"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="12" cy="12" r="12" fill="#37C027" />
+                  </svg>
+                </div>
+                <div class="chaesulayout-mbti">
+                  <p>ISFJ</p>
+                </div>
+              </div>
+              <div class="chaesuproscons">
+                <h4>장점</h4>
+                <p>I지만 매우 밝고 긍정적입니다</p>
+                <h4>단점</h4>
+                <p>부끄러움이 많아요</p>
+              </div>
+            </div>
+            <div class="chaesustyle">
+              <p>협업스타일</p>
+              <span>
+                평화를 중요하게 생각합니다! 막히는게 있으면 최대한 물어보려고
+                많이 하는거 같습니다.</span
+              >
+            </div>
+          </div>
+          <div class="badge-box">
+            <div class="badge front">
+              <div class="badge-pin pin-front"></div>
+              <div class="badge-tag tag-front">
+                <div class="badge-description">
+                  코딩의 마법봉<span>담당</span>
+                </div>
+              </div>
+            </div>
+            <div class="badge back">
+              <div class="badge-pin pin-back"></div>
+              <div class="badge-tag tag-back">
+                <div class="badge-description">
+                  코드와 디자인을 휘두르며<br />
+                  프로젝트에 마법을 부리는 개발자
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="paper">
+            <p class="site-name"><img src="./img/github.svg" alt="" />깃허브</p>
+            <a href="https://github.com/Chasyuss"
+              >https://github.com/Chasyuss</a
+            >
+            <p class="site-name"><img src="./img/velog.svg" alt="" />벨로그</p>
+            <a href="https://velog.io/@cotn963/posts"
+              >https://velog.io/@cotn963/posts</a
+            >
+          </div>
+        </div>
+      </article>
+      <div id="tab6" class="jaehun custom-box" style="display: none">
+        <link rel="stylesheet" href="./style/jaehun.css" />
+        <div class="card-box">
+          <div class="card front">
+            <img class="profile-img" src="./img/jaehun02.JPG" alt="" />
+            <p class="name">곽재훈</p>
+            <p class="birth">1997년 12월 24일</p>
+          </div>
+          <div class="card back"></div>
+        </div>
+        <div class="mbti">
+          <div class="option-bar">
+            <div class="option-bar-btn red"></div>
+            <div class="option-bar-btn yellow"></div>
+            <div class="option-bar-btn green"></div>
+          </div>
+          <div class="text">ENFJ</div>
+        </div>
+        <div class="proscons">
+          <p class="p-title">장점</p>
+          <p class="p-description">
+            제 입으로 말하긴 웃기지만, 성격이 널널한 편입니다.<br />
+            그리고 맡은 일은 끝까지 한다는 점?
+          </p>
+          <p class="p-title">단점</p>
+          <p class="p-description">
+            멘탈과 기억력이 나빠요. <br />에어팟을 끼고서 에어팟이 어디 갔는지
+            자주 찾습니다.
+          </p>
+        </div>
+        <div class="style">
+          <p class="p-title">협업스타일</p>
+          <p class="p-description">
+            함께 일하는 것이 익숙하지는 않지만, 신나고 즐겁게 일하려고
+            노력합니다.<br />
+            신나고 즐거운 분위기에서 더 좋은 결과가 나올 수 있다고 생각하거든요.
+          </p>
+        </div>
+        <div class="badge-box">
+          <div class="badge front">
+            <div class="badge-pin"></div>
+            <div class="badge-tag tag-front">
+              <div class="badge-description">
+                웹 위의 황금 나침반<span>담당</span>
+              </div>
+            </div>
+          </div>
+          <div class="badge back">
+            <div class="badge-pin"></div>
+            <div class="badge-tag tag-back">
+              <div class="badge-description">
+                웹 프로젝트의 방향을 정하고 이끌며<br />
+                팀의 에너지를 불어넣는 개발자
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="paper">
+          <p class="site-name"><img src="./img/github.svg" alt="" />깃허브</p>
+          <a href="https://github.com/KwakOri">https://github.com/KwakOri</a>
+          <p class="site-name"><img src="./img/velog.svg" alt="" />벨로그</p>
+          <a href="https://velog.io/@jh5414092/posts"
+            >https://velog.io/@jh5414092/posts</a
+          >
+        </div>
+      </div>
+
+      <article
+        id="tab7"
+        class="custom-box background-color gahyeon"
+        style="display: none"
+      >
+        <link rel="stylesheet" href="./style/gahyeon.css" />
+        <div class="info-wrap">
+          <div class="card gahyeon">
+            <div class="image box">
+              <img src="./img/me.jpg" class="image gahyeon" />
+            </div>
+            <div class="profile gahyeon">
+              <p></p>
+              <h2><strong>이가현</strong></h2>
+              <p>1999년 2월 9일</p>
+            </div>
+          </div>
+        </div>
+        <div class="info-1">
+          <div class="info-wrap"></div>
+          <div class="image box">
+            <img src="./img/mbti-image.png" class="mbti gahyeon" />
+          </div>
+          <div class="proscons gahyeon">
+            <div class="proscons gahyeon2">
+              <h3><strong>장점</strong></h3>
+              <p>
+                꼼꼼합니다.<br />대~충 넘어가지 않고 끝까지 확인하고 한번 더
+                검토합니다!
+              </p>
+            </div>
+            <div class="proscons gahyeon3">
+              <h3><strong>단점</strong></h3>
+              <p>확인의 확인을 하다 보니 해결하는 시간이 다소 소요됩니다.</p>
+            </div>
+            <div class="style gahyeon">
+              <div class="style gahyeon2">
+                <h3><strong>협업 스타일</strong></h3>
+              </div>
+              <div class="style gahyeon3">
+                <p>
+                  팀원들끼리 편하게 이야기 할 수 있는 분위기를 선호합니다.
+                  <br />그래야 많은 대화를 나눌 수 있고 그 대화 속에서 엄청난
+                  아이디어가 나온다고 믿습니다.(งᐛ)ว 으쌰으쌰 (งᐖ )ว
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="paper"></div>
+        </div>
+
+        <div class="badge-box">
+          <div class="badge front">
+            <div class="badge-pin pin-front"></div>
+            <div class="badge-tag tag-front">
+              <div class="badge-description">
+                디자인의 힙합 스타<span>담당</span>
+              </div>
+            </div>
+          </div>
+          <div class="badge back">
+            <div class="badge-pin pin-back"></div>
+            <div class="badge-tag tag-back">
+              <div class="badge-description">
+                개성적인 디자인과 스타일로<br />
+                프로젝트를 빛내는 개발자
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="paper">
+          <p class="site-name"><img src="./img/github.svg" alt="" />깃허브</p>
+          <a href="https://github.com/Ga-zzang">https://github.com/Ga-zzang</a>
+          <p class="site-name"><img src="./img/velog.svg" alt="" />벨로그</p>
+          <a href="https://velog.io/@gazzanggu/posts"
+            >https://velog.io/@gazzanggu/posts</a
+          >
+        </div>
+      </article>
+    </header>
+
+    <link rel="stylesheet" href="./style/guestbook.css" />
+    <div class="guest-book" id="guestBook">
+      <div class="message">3조에게 응원의 한마디 남겨주세요!</div>
+      <div id="btnbtn"></div>
+      <button class="showbtn" id="showEntryForm">방명록 작성하기</button>
+    </div>
+
+    <!-- 방명록 작성 폼 -->
+    <div class="entry-form" id="entryForm">
+      <h2>방명록 작성하기</h2>
+      <form id="submitForm">
+        <input
+          class="user"
+          type="text"
+          name="username"
+          placeholder="닉네임을 입력하세요."
+        /><br />
+        <textarea
+          class="explain"
+          name="message"
+          placeholder="메시지를 입력하세요."
+        ></textarea
+        ><br />
+        <input class="submitbtn" type="submit" value="등록하기" />
+      </form>
+    </div>
+    <div class="window-area">
+      <div class="teruteru" data-weather="Clear">
+        <div class="teru-line"></div>
+        <div class="teru-face face02"></div>
+        <div class="teru-head"></div>
+        <div class="teru-ribbon red"></div>
+        <div class="teru-body"></div>
+      </div>
+      <div class="teruteru" data-weather="Rain">
+        <div class="teru-line"></div>
+        <div class="teru-face face02"></div>
+        <div class="teru-head"></div>
+        <div class="teru-ribbon blue"></div>
+        <div class="teru-body"></div>
+      </div>
+      <div class="whitespace"></div>
+      <div class="teruteru" data-weather="Snow">
+        <div class="teru-line"></div>
+        <div class="teru-face face02"></div>
+        <div class="teru-head"></div>
+        <div class="teru-ribbon white"></div>
+        <div class="teru-body"></div>
+      </div>
+      <div class="teruteru" data-weather="Clouds">
+        <div class="teru-line"></div>
+        <div class="teru-face face02"></div>
+        <div class="teru-head"></div>
+        <div class="teru-ribbon grey"></div>
+        <div class="teru-body"></div>
+      </div>
+      <div class="window-box">
+        <div class="window-front-frame"></div>
+        <div class="window-frame"></div>
+        <div class="window-blind window1"></div>
+        <div class="window-blind window2"></div>
+        <div class="window-blind window3"></div>
+        <div class="window-blind window4"></div>
+        <div class="window-blind window5"></div>
+      </div>
+    </div>
+    <div class="footer-bg">
+      <footer>
+        <img class="footer-logo" src="./img/footer-logo.png" alt="" />
+        <p>Copyright 2024. JUSIZO. all rights reserved.</p>
+        <a href="https://github.com/JUSIZO/JUSIZO_Frontend"
+          ><img class="footer-icon" src="./img/github.svg" alt="" />Github</a
+        >
+      </footer>
+    </div>
+  </body>
+  <script src="./js/jaehun.js"></script>
+  <script src="./js/guestbook.js"></script>
+  <script src="./js/cat-motion.js"></script>
+  <script src="./js/toast.js"></script>
+  <script src="./js/window.js"></script>
+</html>

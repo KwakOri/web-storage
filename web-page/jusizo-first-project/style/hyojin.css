@@ -1,0 +1,191 @@
+/* 여기 입력해주세요 */
+
+
+#tab4 .tag-front {
+  background-color: #A1C398;
+}
+#tab4 .tag-back {
+  background-color: #C6EBC5;
+} 
+
+
+body {
+    margin: 0;
+}
+.tab-color a {
+    background-color: #77B0AA;
+}
+.nav-tabs-box .nav-link.active {
+    border-bottom: none;
+}
+
+.hyojin-background-color{
+    background-color: #77B0AA;
+}
+
+#tab4 .card {
+    width: 310px;
+    height: 470px;
+    border: 3px solid black;
+    box-shadow: 20px 10px;
+    margin: 20px;
+    background-color: white;
+}
+
+#tab4 .info-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+#tab4 .info {
+    margin: 30px;
+    margin-left: 40px;
+    width: 800px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+}
+#tab4 .profile-title {
+    margin: 20px;
+}
+#tab4 .profile-image {
+    width: 310px;
+    height: 300px;
+}
+
+.info-1 {
+    display: flex;
+    flex-direction: row;
+    width: 790px;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.info-1 .mbti {
+    width: 310px;
+    height: 250px;
+    background-color: whitesmoke;
+    box-shadow: 20px 10px;
+    margin-right: 40px;
+    background-color: #bffbeb;
+}
+
+.mbti .layout-mbti {
+    width: 310px;
+    height: 20px;
+    background-color: rgb(051, 051, 051);
+    padding-bottom: 5px;
+}
+.mbti .layout-mbti-2 {
+    margin: 20px;
+}
+
+.mbti span {
+    font-size: 120px;
+    font-weight: bolder;
+}
+
+.layout-mbti img {
+    margin-top: 4px;
+    margin-left: 8px;
+    width: 11px;
+    height: 11px;
+}
+
+.info-1 .hyojinproscons {
+    background-color: whitesmoke;
+    width: 360px;
+    height: 245px;
+    box-shadow: 20px 10px;
+    padding: 15px 20px 0px 20px;
+}
+.pros, .cons{
+    margin: 15px 10px;
+}
+.pros p, .cons p  {
+    margin: 5px 0 ;
+}
+#tab4 .style {
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: whitesmoke;
+    width: 755px;
+    height: 179px;
+    box-shadow: 20px 10px;
+    padding: 15px 20px;
+}
+.style p {
+    margin: 0 0 10px 0 ;
+}
+.ticket-box{
+    position: relative;
+    z-index: -1;
+    top: -48%;
+    right: -60%;
+    width: 600px;
+}
+.ticket-box img {
+    width: 400px;
+    height: 400px;
+}
+.ticket-box:hover {
+    transform: translateY(170px);
+    transition: 0.5s;
+    bottom: 0;
+}
+.user-link {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.user-link * {
+    margin: 0;
+    padding: 0;
+}
+.user-link .github-link {
+    margin: 35px 0 20px 0;
+}
+.user-link p {
+    color: #333333;
+    font-size: 20px;
+}
+.user-link a {
+    margin-left: 20px;
+    font-weight: 700;
+    color: #999999;
+    text-decoration: underline;
+}
+.github-box {
+    padding: 30px 0 10px 0;
+}
+.github-itmes, .velog-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.github-itmes .github-title, .velog-items .velog-title  {
+    margin-left: 3px;
+}
+.footer-content {
+    margin-left: 200px;
+    width: 365px;
+    height: 155px;
+    background-image: url('/img/hyojin_textbox.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    top: -200%;
+}
+.footer-content span {
+    font-size: 30px;
+    margin: 0 10px;
+}
+.footer-content p {
+    padding-top: 9px;
+    font-size: 25px;
+}
