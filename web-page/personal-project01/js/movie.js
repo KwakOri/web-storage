@@ -238,19 +238,26 @@ const makeMovieArticle = async () => {
   appendMovieCards(movies);
 };
 const addBtnEvent = () => {
-  const movieCards = document.querySelectorAll(".movie-card");
-  const hotMovieCards = document.querySelectorAll(".hot-movie-card");
-  movieCards.forEach((card) => {
-    card.addEventListener("click", () => {
-      alert(card.dataset._id);
-    });
-  });
+  movieArticle.addEventListener('click', (e) => {
+    if (e.target === movieArticle) {
+      return;
+    } else {
+      console.log(e.target);
+    }
+  })
+  // const movieCards = document.querySelectorAll(".movie-card");
+  // const hotMovieCards = document.querySelectorAll(".hot-movie-card");
+  // movieCards.forEach((card) => {
+  //   card.addEventListener("click", () => {
+  //     alert(card.dataset._id);
+  //   });
+  // });
 
-  hotMovieCards.forEach((card) => {
-    card.addEventListener("click", () => {
-      alert(card.dataset._id);
-    });
-  });
+  // hotMovieCards.forEach((card) => {
+  //   card.addEventListener("click", () => {
+  //     alert(card.dataset._id);
+  //   });
+  // });
 };
 const render = async () => {
   await makeMovieArticle();
